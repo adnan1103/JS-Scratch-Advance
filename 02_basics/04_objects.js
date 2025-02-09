@@ -63,13 +63,41 @@ const users = [
   },
 ];
 
+users[1].email;
+// console.log(tinderUser);
 
-users[1].email
-console.log(tinderUser)
+// console.log(Object.keys(tinderUser)); // get keys from object  [ 'id', 'name', 'isLoggedIn' ]
+// console.log(Object.values(tinderUser)); // get values from object [ '123abc', 'Sammy', false ]
+// console.log(Object.entries(tinderUser)); // get one by one seprate entry in array like  [ [ 'id', '123abc' ], [ 'name', 'Sammy' ], [ 'isLoggedIn', false ] ]
 
-console.log(Object.keys(tinderUser)) // get keys from object  [ 'id', 'name', 'isLoggedIn' ]
-console.log(Object.values(tinderUser)) // get values from object [ '123abc', 'Sammy', false ]
-console.log(Object.entries(tinderUser)) // get one by one seprate entry in array like  [ [ 'id', '123abc' ], [ 'name', 'Sammy' ], [ 'isLoggedIn', false ] ]
+// console.log(tinderUser.hasOwnProperty("isLoggedIn")); // true // Before working with value you must check
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn')) // true // Before working with value you must check
+const course = {
+  coursename: "Js in Urdu",
+  price: 999,
+  courseInstructor: "AdnanYousaf",
+};
+
+// course.courseInstructor  // this is the fine method but accessing any value we call again and again
+
+// Object Destructring { we can change the name}
+const { courseInstructor: instructor } = course;
+console.log(instructor);
+
+// this is destructuring in React
+// const navbar = ({company}) => {
+
+// }
+// navbar(company = "Adnan")
+
+// this is the Json foramte
+// {
+//   "name": "Adnan",
+//   "coursename": "Js in Urdu",
+//   "price": "free"
+// }
+
+// Apis in array formate we get some time { and in one array multiple objects}
+// [{}, {},{}, {}, {}]
+
 
