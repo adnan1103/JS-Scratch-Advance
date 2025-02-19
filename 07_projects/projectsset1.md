@@ -12,5 +12,22 @@
 ## project 1
 
 ```javascript
-console.log('Adnan with Hitesh)
+Color Changer
+```
+## project 2
+
+```javascript
+BMI Generator
+
+```
+## project 3
+
+```javascript
+Digital Clock
+
+```
+## project 4
+
+```javascript
+Guess the Number
 ```
