@@ -11,6 +11,23 @@
     <button id="stop">Stop</button>
   </body>
   <script>
+    const sayDate = function (str) {
+      console.log(str, Date.now());
+    };
+
+    const intervalId = setInterval(sayDate, 1000, "hi");
+    // clearInterval(intervalId);
+
+    document.querySelector("#stop").addEventListener("click", function () {
+      clearInterval(intervalId);
+      console.log("Stopped");
+    });
+
+    document.querySelector("#start").addEventListener("click", function() {
+       setInterval(sayDate, 3000, "New Lifecycle");
+       console.log("Started");
+
+    });
 
   </script>
 </html>
